@@ -1,0 +1,5 @@
+#
+#Wed Aug 21 22:11:03 GMT+09:00 2024
+depth=32
+width=1024
+height=512
