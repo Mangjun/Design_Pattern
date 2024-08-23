@@ -4,6 +4,7 @@ Java 언어로 디자인 패턴 학습
 - [Iterator](#iterator)
 - [Adpater](#adapter)
 - [Template_Method](#template-method)
+- [Factory_Method](#factory-method)
 
 ## Iterator
 > for문의 **변수 i의 기능**을 추상화하여 일반화한 패턴   
@@ -55,5 +56,22 @@ Java 언어로 디자인 패턴 학습
 
 - 사용하는 경우 : 비슷한 기능이지만 구체적인 구현이 다를 때   
 - 사용하는 이유 : 상위 클래스에서 알고리즘을 작성하기 때문에, 하위 클래스에서 알고리즘을 일일이 적을 필요가 없어짐
+
+<br>
+
+## Factory Method
+> 상위 클래스에서 Template Method를 통하여 뼈대를 구성하고 하위 클래스에서 구체적인 인스턴스를 생성하도록 하는 패턴   
+
+<br>
+
+* Product(제품) : 이 패턴으로 생성되는 인스턴스가 가져야 할 API를 선언 -> Product
+* Creator(작성자) : Product를 생성하는 API를 선언 -> Factory
+* ConcreteProduct(구체적인 제품) : Product의 API를 구현 -> IDCard
+* ConcreteCreator(구체적인 작성자) : Creator의 API를 구현 -> IDCardFactory
+
+<br>
+
+- 사용하는 경우 : 구체적인 상품이 여러 개이고, 같은 API를 가져야 할 때
+- 사용하는 이유 : 확장에 유연함
 
 <br>
