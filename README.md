@@ -5,6 +5,7 @@ Java 언어로 디자인 패턴 학습
 - [Adpater](#adapter)
 - [Template_Method](#template-method)
 - [Factory_Method](#factory-method)
+- [Singleton](#singleton)
 
 ## Iterator
 > for문의 **변수 i의 기능**을 추상화하여 일반화한 패턴   
@@ -73,5 +74,19 @@ Java 언어로 디자인 패턴 학습
 
 - 사용하는 경우 : 구체적인 상품이 여러 개이고, 같은 API를 가져야 할 때
 - 사용하는 이유 : 확장에 유연함
+
+<br>
+
+## Singleton
+> 클래스의 인스턴스를 딱 하나만 만드는 패턴   
+
+<br>
+
+* Singleton : 인스턴스를 얻기 위한 static 메소드를 선언 -> Singleton
+
+<br>
+
+- 사용하는 경우 : 인스턴스를 하나만 만들어야 할 때
+- 사용하는 이유 : 인스턴스가 하나뿐이라는 보장이 있다는 전제로 프로그래밍할 수 있음
 
 <br>
