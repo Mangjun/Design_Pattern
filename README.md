@@ -7,6 +7,7 @@ Java 언어로 디자인 패턴 학습
 - [Factory_Method](#factory-method)
 - [Singleton](#singleton)
 - [Prototype](#prototype)
+- [Builder](#builder)
 
 ## Iterator
 > for문의 **변수 i의 기능**을 추상화하여 일반화한 패턴   
@@ -105,5 +106,21 @@ Java 언어로 디자인 패턴 학습
 
 - 사용하는 경우 : 종류가 너무 많아서 정리할 수 없는 경우, 클래스로부터 인스턴스 생성이 어려운 경우, 프레임워크와 생성하는 인스턴스를 분리하고 싶은 경우
 - 사용하는 이유 : 소스 프로그램을 관리하기 쉬워지고 프레임워크와 분리할 수 있음
+
+<br>
+
+## Builder
+> 구조를 가진 인스턴스를 만들어 가는 패턴   
+
+<br>
+
+* Builder(건축가) : 인스턴스를 생성하기 위한 API를 결정 -> Builder
+* ConcreteBuilder(구체적인 건축가) : Builder의 API를 구현 -> TextBuilder, HTMLBuilder
+* Director(감독관) : Builder의 API를 사용하여 인스턴스 생성 -> Director
+
+<br>
+
+- 사용하는 경우 : 비슷한 기능을 하는 부품으로 교체할 가능성이 있을 경우
+- 사용하는 이유 : 다른 부품으로 교체하는 데 비용이 들지 않음
 
 <br>
