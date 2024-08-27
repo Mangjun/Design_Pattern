@@ -8,6 +8,7 @@ Java 언어로 디자인 패턴 학습
 - [Singleton](#singleton)
 - [Prototype](#prototype)
 - [Builder](#builder)
+- [Abstract_Factory](#abstract-factory)
 
 ## Iterator
 > for문의 **변수 i의 기능**을 추상화하여 일반화한 패턴   
@@ -122,5 +123,22 @@ Java 언어로 디자인 패턴 학습
 
 - 사용하는 경우 : 비슷한 기능을 하는 부품으로 교체할 가능성이 있을 경우
 - 사용하는 이유 : 다른 부품으로 교체하는 데 비용이 들지 않음
+
+<br>
+
+## Abstract Factory
+> 부품으로 구조를 만들어놓고 하위 클래스에서 구현하도록 하는 패턴   
+
+<br>
+
+* AbstractProduct(추상적인 제품) : AbstractFactory에 의해 만들어지는 추상적인 제품의 API를 결정 -> Link, Tray, Page
+* AbstractFactory(추상적인 공장) : AbstractProduct의 인스턴스를 만들기 위한 API를 결정 -> Factory
+* ConcreteProduct(구체적인 제품) : AbstractProduct의 API를 구현 -> ListLink, ListTray, ListPage, DivLink, DivTray, DivPage
+* ConcreteFactory(구체적인 공장) : AbstractFactory의 API를 구현 -> ListFactory, DivFactory
+
+<br>
+
+- 사용하는 경우 : 같은 일을 하되 구체적인 구현만 다른 클래스들이 많을 경우
+- 사용하는 이유 : 비용없이 구체적인 공장을 새로 추가하는 것이 간단함
 
 <br>
